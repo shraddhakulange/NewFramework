@@ -10,11 +10,13 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class Browserfactory {
 	
+	//this is browser factory class 
+	
 	public static WebDriver driver;
 
 	 public  static WebDriver openbrowser(String browser,String browsername,String url)
 	 {
-		if(browsername.equalsIgnoreCase("chrome"))
+		if(browsername.equalsIgnoreCase("Chrome"))
 		{
 			driver=new ChromeDriver();
 			System.setProperty("webdriver.chrome.driver", "/Framework/Driver/chromedriver.exe");
